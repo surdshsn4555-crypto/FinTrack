@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    
+    }
+    main{
+        
+        display: flex;
+        position: relative;
+        
+    }
+    .left{
+        height: 100%;
+        width: 20%;
+        border: 1px solid;
+        position: fixed;
+    }
+    .right{
+        height: 100%;
+        width: 80%;
+        border: 1px solid;
+        margin-left: 20%;
+        background-color: rgb(241, 237, 237);
+        position: relative;
+    }
+    nav{
+        height: 10%;
+       
+        
+        display: flex;
+        padding: 30px;
+        
+    }
+    section{
+        height: 20%;
+        
+        margin: 30px;
+
+    }
+    .btn1{
+        height: 40px;
+        width: 180px;
+       background-color:lightgrey;
+       color: blue;
+       border: none;
+       border-radius: 10px;
+       font-weight: 500;
+       font-size: large;
+       margin-bottom: 10px;
+      
+
+    }
+    .btn2{
+        height: 40px;
+        width: 180px;
+       background-color:lightgrey;
+       color: blue;
+       border: none;
+       border-radius: 10px;
+       font-weight: 500;
+       font-size: large;
+      
+    }
+    footer{
+        height: 10%;
+        margin-top: 320px;
+
+    }
+    .btn3{
+         height: 45px;
+        width: 190px;
+       background-color:black;
+       color: white;
+       border: none;
+       border-radius: 10px;
+       font-weight: 500;
+       font-size: large;
+       margin-left: 25px;
+       margin-bottom: px;
+      
+
+    }
+    .nav-right{
+        height: 100%;
+        width: 100%;
+        background-color: gray;
+        border: 1px solid gray;
+        position: absolute;
+    }
+    .right1{
+        height: 10%;
+        display: flex;
+        justify-content: end;
+       padding: 10px;
+
+
+    }
+    .btn4{
+         height: 45px;
+        width: 150px;
+         font-weight: 500;
+       font-size: large;
+       border-radius: 10px;
+       border: none;
+    }
+    .up{
+      padding: 10px;
+      margin-left: 30px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    }
+    .card{
+        height: 170px;
+        width:200px;
+        border: 1px solid gray;
+        border-radius: 10px;
+
+    }
+    p{
+        color: gray;
+    }
+    .mid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+
+    }
+    .midl{
+        height: 300px;
+        width: 600px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+    .midr{
+        height: 200px;
+        width: 250px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-bottom: 40px;
+
+    }
+    .box{
+         height: 300px;
+        width: 600px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-top: 40px;
+        margin-left: 35px;
+    }
+    .data{
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        height: 30px;
+        width: 600px;
+        margin-top: 20px;
+        border: 1px solid;
+        overflow: hidden;
+    }
+    .form
+    {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.454);
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+ .box1{
+    height: 60%;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+ }
+
+</style>
+<body>
+    <main>
+       <div class="left">
+         <nav>
+    <div>
+         <img style="margin-right:10px;height: 30px;border-radius: 10px;" src="layers.png" alt="">
+        </div>
+        <div>
+            <h3>FinTrack Pro</h3>
+            <p>Enterprise Finance</p>
+        </div>
+    </nav>
+    <section>
+        <button class="btn1"><img style="height: 15px;color: #000;gap: 10px;" src="dashboard (1).png" alt="">Dashboard</button><br>
+       <button class="btn2"><img style="height: 15px;" src="settings (2).png" alt="">Setting</button>
+     
+    </section>
+    <footer>
+       <button class="btn3">+ Add Transaction </button>
+    </footer>
+       </div>
+       <div class="right">
+        <div class="right1">
+            <div></div>
+            <button class="btn4"><img style="height: 15px;color: #000;gap: 10px;"  src="logout.png" alt="">  logout</button>
+        </div>
+        <div class="up">
+            <h1>Financial Overview</h1>
+            <p style="color: gray;">Real-Time Tracking Application</p>
+        </div>
+        <div class="container">
+            <div class="card">
+                <img style="height: 90px;padding: 20px;margin: 10px;" src="bank.png" alt="">
+                <h4 >$ 00</h4>
+                <p >current balance</p>
+            </div>
+            <div class="card">
+                <img style="height: 90px;padding: 20px;margin: 10px;" src="increase.png" alt="">
+                <h4>$ 00</h4>
+                <p>Total income</p>
+             </div>
+            <div class="card">
+                <img style="height: 90px;padding: 20px;margin: 10px;" src="wallet.png" alt="">
+                <h4>$ 00</h4>
+                <p>Total income</p>
+            </div>
+            <div class="card">
+                <img style="height: 90px;padding: 20px;margin: 10px;" src="piggy-bank.png" alt="">
+                <h4>$ 00</h4>
+                <p>Total income</p>
+            </div>
+
+        </div>
+        <div class="mid">
+            <div class="midl">
+                <div style="height:270px;width: 600px;" class="chart-div">
+                    <h3 style="padding: 2px;margin-left: 5px;">Transaction Flow Analysis</h3>
+                <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="midr"></div>
+        </div>
+        <div class="task">
+            <div class="box">
+                <h2>All Transactions</h2>
+                <input type="search">
+                <select name="Select">
+                <option value="All">All</option>
+                <option value="Expense">Expense</option>
+                <option value="Income">Income</option>
+              </select>
+              <div style="display: flex;justify-content: space-around;margin-top: 30px;" class="heading">
+                <h4>Date</h4>
+              <h4>Description</h4>
+              <h4>Category</h4>
+              <h4>Amount</h4>
+              <h4>Action</h4>
+              </div>
+              <div class="dataset">
+                
+              </div>
+              
+                
+            </div>
+
+        </div>
+       
+
+
+        </div>
+       </div>
+    </main>
+     <div class="form">
+        <div class="box1">
+            <div style="display: flex;justify-content: space-between;margin: 10px;">
+                <h3>Add Transaction</h3>
+                <button style="border: none;font-size: large;" class="close">x</button>
+
+            </div>
+            <div style="margin-left: 30px;">
+                <p>Type</p>
+                <select style="height :30px;width: 300px;" id="type">
+                    <option value="">All</option>
+                    <option value="">Expense</option>
+                    <option value="">Income</option>
+                </select>
+               <div style="margin-top: 20px;">
+                 <p>Description</p>
+                <input style="height :30px;width: 300px;" id="description" type="text" placeholder="e.g. Amazon, Salary, Coffee">
+               </div>
+                <div style="display: flex;margin-top: 20px;">
+                    <div >
+                        <p>Amount</p>
+                        <input style="height :30px;width: 150px;" id="amount" type="text">
+                    </div>
+                    <div>
+                        <p>Date</p>
+                        <input style="height :30px;width: 150px;" id="date" type="date">
+                    </div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <p>Categories</p>
+                    <select style="height :30px;width: 300px;" name="categories" id="category">
+                        <option value="">Food & Dinner</option>
+                        <option value="">Shopping</option>
+                        <option value="">Bill & Reacharge</option>
+                        <option value="">petrol & Auto</option>
+                        <option value="">Utility</option>
+                        <option value="">Salary</option>
+                        <option value="">Entainment</option>
+                        <option value="">other</option>
+                    </select>
+                </div>
+                <div style="height :30px;width: 300px;margin-top: 20px;">
+                    <button style="height :30px;width: 300px;border-radius: 10px;background-color: black;color: white;border: none;" class="saveform">Save Transaction</button>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <script src="script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  
+
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Income','Expense'],
+      datasets: [{
+        label: '# of Expense',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+  
+</script>
+    
+</body>
+</html>
