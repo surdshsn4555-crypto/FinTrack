@@ -30,6 +30,7 @@
     </footer>
        </div>
        <div class="right">
+        <!-- <div style="display: none;height: 100%;width;"></div> -->
         <div class="right1">
             <div></div>
             <button class="btn4"><img style="height: 15px;color: #000;gap: 10px;"  src="logout.png" alt="">  logout</button>
@@ -68,13 +69,21 @@
                 <canvas id="myChart"></canvas>
                 </div>
             </div>
-            <div class="midr"></div>
+            <div class="midr">
+                <h3 style="padding: 20px;">prefences</h3>
+                <div style="display: flex;justify-content: space-between;padding: 20px;">
+                    <h6>Dark Mode</h6>
+                    <input style="height: 30px;width: 40px;border: none;border-radius: 10px;background-color: gray;" type="button" value="on">
+                </div>
+                <hr>
+                <input style="height: 30px;width: 200px;margin: 22px;background-color: red;border: none;border-radius: 10px;" type="button" value="Reset All Data">
+            </div>
         </div>
         <div class="task">
             <div class="box">
                 <h2>All Transactions</h2>
-                <input type="search">
-                <select name="Select">
+                <input style="height: 30px;width: 400px;border-radius: 10px;border: none;margin: 10px;padding-left: 30px;" type="search" placeholder="serch data">
+                <select style="height: 30px;width: 150px;border-radius: 10px;border: none;" name="Select">
                 <option value="All">All</option>
                 <option value="Expense">Expense</option>
                 <option value="Income">Income</option>
