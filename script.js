@@ -1,3 +1,7 @@
+// if (!localStorage.getItem('isLoggedIn')) {
+//     window.location.href = 'login.html';
+// }
+
 const ctx = document.getElementById('myChart');
 let box = document.querySelector(".form");
 let open = document.querySelector(".btn3");

@@ -8,7 +8,7 @@ registerBtn.addEventListener("click", function () {
 
     let name = username.value.trim();
     let pass = password.value.trim();
-
+ 
     // Validation
     if (name === "" || pass === "") {
         alert("Please fill all fields.");
@@ -26,6 +26,12 @@ registerBtn.addEventListener("click", function () {
         return;
     }
 
+    //c
+    if (localStorage.getItem(pass)) {
+        alert("password already exists!")
+        return;
+    }
+
     // Save data in localStorage
     const user = {
         username: name,
@@ -33,6 +39,7 @@ registerBtn.addEventListener("click", function () {
     };
 
     localStorage.setItem(name, JSON.stringify(user));
+    localStorage.setItem(password, JSON.stringify(user));
 
     alert("Registration Successful!");
 
