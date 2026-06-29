@@ -49,4 +49,10 @@ registerBtn.addEventListener("click", function () {
 
     // Redirect to login page
     window.location.href = "login.html";
+
+     localStorage.setItem("username", name);
+    localStorage.setItem("password", pass);
+    localStorage.setItem("isLoggedIn", "true");
+
+    window.location.href = "index.html";
 });

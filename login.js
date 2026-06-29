@@ -36,4 +36,11 @@ loginBtn.addEventListener("click", function () {
     } else {
         alert("Incorrect Password!");
     }
+
+     let oldname = localStorage.getItem("name");
+    let oldpass = localStorage.getItem("word");
+
+    if (loginname === oldname && loginPass === oldpass) {
+        localStorage.setItem("isLoggedIn", "true");
+        window.location.href = "index.html";
 });

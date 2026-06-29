@@ -1,8 +1,17 @@
-// if (!localStorage.getItem('isLoggedIn')) {
-//     window.location.href = 'login.html';
-// }
+// check if user is logged in or not
+if (!localStorage.getItem('isLoggedIn')) {
+    window.location.href = 'login.html';
+}
 
-const ctx = document.getElementById('myChart');
+// logout btn
+let logoutBtn = document.querySelector('#logoutBtn');
+
+logoutBtn.addEventListener('click', () => {
+    localStorage.removeItem('isLoggedIn');
+    window.location.href = 'login.html';
+});
+
+
 let box = document.querySelector(".form");
 let open = document.querySelector(".btn3");
 let close = document.querySelector(".close");
